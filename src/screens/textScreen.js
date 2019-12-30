@@ -14,6 +14,7 @@ const TextScreen = () => {
                 onChangeText={(newValue) => setName(newValue)}
             />
             <Text>My name is {name}</Text>
+            {name.length < 5 ? <Text>That is a short name</Text>: null }
         </View>
 
     );
